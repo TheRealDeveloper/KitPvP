@@ -1,0 +1,25 @@
+name: KitPVP
+main: kitpvp\Main
+version: 1.0.0
+api: 4.0.0
+author: LBWB
+
+commands:
+  kit:
+    description: Opens the Kit Menu
+    permission: kit.cmd
+  setcoins:
+    description: Set the Coins of Players
+    permission-message: "§cYou dont have permissions to use this Command!"
+    permission: set.coins
+  coins:
+    description: Shows your Coins
+    permission: coins.cmd
+
+permissions:
+  kit.cmd:
+    default: true
+  set.coins:
+    default: op
+  coins.cmd:
+    default: true
