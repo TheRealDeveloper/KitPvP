@@ -44,8 +44,6 @@ use pocketmine\event\player\PlayerDeathEvent;
 use jojoe77777\FormAPI\SimpleForm;
 use jojoe77777\FormAPI\CustomForm;
 use pocketmine\utils\Config;
-use function pocketmine\check_platform_dependencies;
-use function Sodium\add;
 
 class Main extends PluginBase implements Listener{
 
