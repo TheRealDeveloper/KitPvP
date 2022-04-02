@@ -159,7 +159,7 @@ class Main extends PluginBase implements Listener{
                             $sender->sendMessage("§4Player not found");
                             return false;
                         }
-                        if(!$player === null){
+                        if(!$player == null){
                             $sender->sendMessage("Usage: /setcoins >player< <--> >amount<");
                         }else{
                             $money = new Config($this->getDataFolder() . "KitFFA/Money/" . $player->getName() . "/money.yml", Config::YAML);
