@@ -153,6 +153,7 @@ class Main extends PluginBase implements Listener{
         switch ($command->getName()){
             case "setcoins":
                 if($sender instanceof Player){
+                    if($sender->hasPermission("kitpvp.setcoins")){
                     if(isset($args[0])){
                         $player = $this->getServer()->getPlayerByPrefix($args[0]);
                         if(!$player->isOnline()){
@@ -180,6 +181,7 @@ class Main extends PluginBase implements Listener{
                         }
                     }else{
                         $sender->sendMessage("Usage: /setcoins >player< <--> >amount<");
+                    }
                     }
                 }else{
                     $sender->sendMessage("Ingame!");
