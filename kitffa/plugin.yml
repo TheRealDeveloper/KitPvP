@@ -7,19 +7,19 @@ author: LBWB
 commands:
   kit:
     description: Opens the Kit Menu
-    permission: kit.cmd
+    permission: kitpvp.menu
   setcoins:
     description: Set the Coins of Players
     permission-message: "§cYou dont have permissions to use this Command!"
-    permission: set.coins
+    permission: kitpvp.setcoins
   coins:
     description: Shows your Coins
-    permission: coins.cmd
+    permission: kitpvp.coins
 
 permissions:
-  kit.cmd:
+  kitpvp.menu:
     default: true
-  set.coins:
+  kitpvp.setcoins:
     default: op
-  coins.cmd:
+  kitpvp.coins:
     default: true
